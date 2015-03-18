@@ -1,0 +1,17 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*",
+        "behat/behat": "2.4.*@stable",
+        "behat/mink": "1.4.*@stable",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium2-driver": "*"
+    },
+    "autoload": {
+        "psr-0": {"Nshiell": "src/"}
+    },
+    "minimum-stability": "dev",  
+    "config": {  
+        "bin-dir": "bin/"
+    }
+}
