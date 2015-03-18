@@ -13,5 +13,8 @@
     "minimum-stability": "dev",  
     "config": {  
         "bin-dir": "bin/"
+    },
+    "require": {
+        "twig/twig": "~1.4"
     }
 }
