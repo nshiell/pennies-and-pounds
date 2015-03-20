@@ -8,8 +8,14 @@ namespace Nshiell;
  */
 class Wallet
 {
+    /**
+     * @var int amount of money (in pence)
+     */
     protected $amount;
  
+    /**
+     * @var array The avaliable coins (format name => value (X == pound))
+     */
     protected $avaliableCoins = [
         'X2'  => 200,
         'X1'  => 100,
@@ -99,6 +105,5 @@ class Wallet
                 }
             }
         }
-        
     }
 }
