@@ -1,0 +1,20 @@
+{% if coins %}
+    <table class="coins">
+        <tr>
+            <th>Coin Type</th>
+            <th>X Number needed</th>
+        </tr>
+    {% for coin, number in coins %}
+        <tr>
+            <td class="coin coin-{{ coin }}">{{ coin|replace({'X': '&pound;'})|raw }}</td>
+            <td class="quantity">{{ number }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% elseif amount %}
+    <table class="coins">
+        <tr>
+            <td>The amount "{{ amount }}" has no coins</td>
+        </tr>
+    </table>
+{% endif %}
