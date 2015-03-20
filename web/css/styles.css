@@ -449,10 +449,10 @@ p {
     line-height: 25px;
 }
 a {
-    color: #73d0da
+    color: #dad073
 }
 a:hover, a:focus {
-    color: #73d0da;
+    color: #dad073;
     text-decoration: none;
 }
 .texture-overlay {
@@ -473,11 +473,11 @@ Buttons
     padding: 20px 50px;
     border-radius: 3px;
     background-color: #fff;
-    color: #4b98a9;
+    color: #a9984b;
     font-size: 16px;
 }
 .use-btn:hover, .use-btn:focus {
-    background-color: #73d0da;
+    background-color: #dad073;
     color: #fff;
     text-decoration: none;
 }
@@ -490,8 +490,8 @@ Buttons
     font-size: 16px;
 }
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: #dad073;
+    color: #dad073;
     text-decoration: none;
 }
 .read-more-btn {
@@ -583,7 +583,6 @@ Hero
     min-height: 800px;
     background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
     background-size: cover;
-    color: #fff;
 }
 .hero h1 {
     margin: 200px 0 45px 0;
@@ -629,11 +628,11 @@ section.video a {
     color: #323a45
 }
 section.video a:hover, section.video a:focus {
-    color: #73d0da;
+    color: #dad073;
     text-decoration: none;
 }
 section.video a:hover i, section.video a:focus i {
-    color: #73d0da
+    color: #dad073
 }
 
 /* ==========================================================================
@@ -889,7 +888,7 @@ Screenshots
     color: #fff
 }
 .screenshots figcaption a:hover, .screenshots figcaption a:focus {
-    color: #73d0da
+    color: #dad073
 }
 .screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
     opacity: 1
@@ -1028,8 +1027,8 @@ Nav Overlay
     transition: all 300ms ease-in-out;
 }
 .overlay ul li a:hover, .overlay ul li a:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: #dad073;
+    color: #dad073;
 }
 
 /* Effects */
@@ -1090,4 +1089,155 @@ Waypoints
 .delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+
+.hero h1 {
+    margin: 0 0 20px 0;
+}
+
+form, h1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+input, table {
+    -webkit-box-shadow: 10px 10px 49px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: 10px 10px 49px 0px rgba(0,0,0,0.37);
+    box-shadow: 10px 10px 49px 0px rgba(0,0,0,0.37);
+}
+
+table {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 640px;
+    /* Table reset stuff */
+    border-collapse: collapse; border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+        
+td, th {  border: 0 none; height: 30px; }
+            
+th {
+  /* Gradient Background */
+    background: linear-gradient(#333 0%,#665544 100%);
+    color: #FFF; font-weight: bold;
+    height: 40px;
+
+    text-align: center;
+}
+        
+td { background: #FAFAFA; text-align: center; box-shadow: 10px}
+
+/* Zebra Stripe Rows */
+        
+tr:nth-child(even) td { background: #EEE; } 
+tr:nth-child(odd) td { background: #FDFDFD; }
+
+/* First-child blank cells! */
+/*tr td:first-child, tr th:first-child { 
+    background: none; 
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+    width: 80px; 
+}*/
+
+/* Add border-radius to specific cells! */
+tr:first-child th:nth-child(2) { 
+  border-radius: 30px 0 0 0; 
+} 
+
+tr:first-child th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+tr:first-child th:last-child { 
+  border-radius: 0 10px 0 0;
+}
+
+
+
+tr:last-child td:nth-child(2) { 
+  border-radius: 0 0 10px 0; 
+} 
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+/*
+tr:last-child td:last-child { 
+  border-radius: 0 10px 0 0;
+}*/
+
+
+
+
+
+.use-textbox {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #FFDD99;
+    color: #a9984b;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px 10px 0;
+    padding: 20px 50px;
+}
+
+
+
+
+
+
+
+html, body {
+    height: 00%l;
+    background-image: url('/img/hero-01.jpg');
+}
+
+
+
+.coins td {
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffffff, 0 0 15px #ffffff;
+    /*box-shadow: 10px 10px 10px 000000;*/
+}
+
+.coins .coin {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 150px;
+    text-align: center;
+    width: 200px;
+}
+
+.coins .coin-X2 {
+    background-image: url('/img/coins/X2.gif');
+}
+
+.coins .coin-X1 {
+    background-image: url('/img/coins/X1.gif');
+}
+
+.coins .coin-50p {
+    background-image: url('/img/coins/50p.gif');
+}
+
+.coins .coin-20p {
+    background-image: url('/img/coins/20p.gif');
+}
+
+.coins .coin-2p {
+    background-image: url('/img/coins/2p.gif');
+}
+
+.coins .coin-1p {
+    background-image: url('/img/coins/1p.gif');
 }
